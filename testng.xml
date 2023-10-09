@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="com.automationexcercise.automationUtilities.CustomListener"/>
+    </listeners>
+    <test name="Login page Test" >
+        <classes>
+            <class name="com.automationexcercise.testCases.TC01_OpenLoginPage"/>
+        </classes>
+    </test>
+    <test name="User Login Test" >
+        <classes>
+            <class name="com.automationexcercise.testCases.TC02_UserLogin"/>
+        </classes>
+    </test>
+</suite>
