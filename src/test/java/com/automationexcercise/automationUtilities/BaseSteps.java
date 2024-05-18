@@ -92,6 +92,7 @@ public void initializeReport(){
     @AfterMethod
     public void tearDown() {
         getDriverInstance().quit();
+        log.info("Closed  browser driver ");
         driver.remove();// Removes current thread's value for thread local variable
     }
 }
